@@ -2,3 +2,6 @@
 
 // var(ES5)
 //let const(ES6)
+
+// temporal dead zone 
+
