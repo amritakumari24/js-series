@@ -5,3 +5,6 @@
 
 // temporal dead zone 
 
+// type corecsion
+
+// quirks 
