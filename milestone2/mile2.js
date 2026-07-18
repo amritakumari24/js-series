@@ -202,3 +202,108 @@
 // Closure Master Rule:
 // Same outer function call → inner functions same closure share kar sakte hain
 // Different outer function calls → separate closure environments bante hain
+
+
+
+// Logic Practice
+
+
+// Even Odd
+// Leap Year
+// Largest of Three Numbers
+// Electricity Bill
+// Login Validation
+// Age Eligibility
+
+
+// Even Odd
+
+// const readline = require("readline/promises")
+// const input = readline.createInterface({
+//     input : process.stdin,
+//     output: process.stdout
+// })
+
+// async function oddEven(){
+//     const num = Number(await input.question("Enter number: "));
+//     if(num%2===0){
+//         console.log(`${num} is Even`)
+//     }else{
+//         console.log(`${num} is odd`)
+//     }
+//input.closee()
+// }
+// oddEven();
+
+
+
+// Leap Year
+// const readline = require("readline/promises");
+// const input = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// })
+
+// async function leapYear(){
+//     const year = Number( await input.question("Enter year: "));
+//     if(year%400===0 || year%4==0 && year%100!=0){
+//         console.log("leap year")
+//     }else{
+//         console.log("not a leap year")
+//     }
+//     input.close()
+// }
+
+// leapYear();
+
+// Largest of three Numbers
+
+const readline = require("readline/promises");
+const input = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+}) 
+
+// async function largestOfThreeNums(){
+//     const num1 = Number(await input.question("enter num1: "))
+//     const num2 = Number(await input.question("enter num2: "))
+//     const num3 = Number(await input.question("enter num3: "))
+
+//     if (num1>=num2 && num1>=num3){
+//        console.log(`${num1} is largest number`)
+//     }else if(num2>=num3 && num2 >=num1){
+//        console.log(`${num2} is largest number`)
+//     }else{
+//       console.log(num3)
+//     }
+//     input.close()
+// }
+
+// largestOfThreeNums();
+
+
+
+//Electricity bill
+
+// async function electircityBill(){
+
+//     const units = Number(await input.question("enter rawbill: "))
+//     if(units >=0 && units<=100){
+//         const finalBill = units*5
+//         console.log(`${finalBill} is final bill`)
+//     }else if(units>=101 && units<=200){
+//         const finalBill = 8*(units-100)+(100*5)
+//         console.log(`${finalBill} is final bill`)
+//     }else{
+//        const a = (units-200)
+//        const b = ((units-100)-a)*8
+//        const finalBill = b+(100*5)+ (a*10)
+//        console.log(`${finalBill} is final bill`)
+//     }
+//     input.close()
+// }
+
+// electircityBill();
+
+
+
