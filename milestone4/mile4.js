@@ -24,5 +24,5 @@
 
 // console.log(text.trim());
 
-let text = "A,B,C";
-console.log(text.split(","))
+// let text = "A,B,C";
+// console.log(text.split(","))
