@@ -258,11 +258,11 @@
 
 // Largest of three Numbers
 
-const readline = require("readline/promises");
-const input = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-}) 
+// const readline = require("readline/promises");
+// const input = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// }) 
 
 // async function largestOfThreeNums(){
 //     const num1 = Number(await input.question("enter num1: "))
@@ -304,6 +304,5 @@ const input = readline.createInterface({
 // }
 
 // electircityBill();
-
 
 

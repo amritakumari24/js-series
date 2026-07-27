@@ -9,7 +9,7 @@
 // console.log(name);
 
 // function findFactorial(n){
-//     let fact =1 
+//     let fact =1
 //     for (let i=1; i <=n;i++){
 //         fact *= i
 //     }
@@ -18,12 +18,11 @@
 // }
 // findFactorial(5);
 
-
 // function fibonacci(n){
 //    let a = 0;
 //    let b = 1;
 //    for(let i=0; i<n; i++){
-    
+
 //     let c = a+b;
 //       a=b;
 //       b=c;
@@ -37,8 +36,6 @@
 
 // for(let i=1;i<=10;i++){
 
-
-
 // let c=a+b;
 
 // a=b;
@@ -48,13 +45,11 @@
 // }
 // console.log(a);
 
-
 // sayHi();
 
 // const sayHi = function () {
 //     console.log("Hello");
 // };
-
 
 // greet();
 
@@ -62,11 +57,77 @@
 //     console.log("Hello");
 // }
 
-
-
 // function test() {
 
 //     console.log("Hello");
 // }
 
 // console.log(test());
+
+// var name = "Rahul";
+
+// let age = 25;
+
+// const city = "Delhi";
+
+// console.log(window.name);
+// console.log(window.age);
+// console.log(window.city);
+
+// console.warn("learn as much as u can")
+// console.error("distraction")
+// console.table("hello,qwjgdiu")
+
+// Why are var variables added to the window object but let/const are not?
+
+// Best answer:
+
+// In browsers, variables declared with var in the global scope become properties of the global window object because of older JavaScript behavior. Variables declared with let and const are stored in the global lexical environment and do not become window properties to avoid global namespace pollution and provide better scoping.
+
+
+
+// alert("helo")
+
+// Is alert() JavaScript ka part hai?
+
+// Answer:
+
+// No, alert() is not a core JavaScript function. It is a browser-provided Web API method.
+
+// JavaScript engine itself doesn't know about alert().
+
+
+
+
+//prime number 
+
+// const readline = require("readline/promises");
+// const input = readline.createInterface({
+//     input:process.stdin,
+//     output: process.stdout
+// })
+
+// async function checkPrime(){
+//     const number = Number(await input.question("Enter number: "));
+
+//     if (number <= 1){
+//         console.log("not prime")
+//     }else{
+//         let count = 0
+//         for(let i=1; i<=number; i++ ){
+//             if(number%i===0){
+//                 count += 1 
+//             }
+//         }
+//         if (count === 2){
+//             console.log("prime")
+//         }else{
+//             console.log("not prime")
+//         }
+//     }
+//     input.close()
+    
+// }
+
+// checkPrime();
+
