@@ -129,8 +129,53 @@
     
 // }
 
-
-
 // checkPrime();
+
+
+
+// reverse 
+
+
+// const readline = require("readline/promises");
+// const input = readline.createInterface({
+//     input:process.stdin,
+//     output: process.stdout
+// })
+
+// async function reverseNumber(){
+//     let  num = Number(await input.question("enter number: "))
+//     let rev = 0;
+//     while(num > 0){
+//         digit = num%10
+//         rev = rev*10+digit
+//         num = Math.floor(num/10)
+//     }
+//     console.log(rev)
+//     input.close()
+// }
+// reverseNumber()
+
+
+// const readline = require("readline/promises");
+// const input = readlin.createInterface({
+//     input:process.stdin,
+//     output: process.stdout
+// })
+
+// async function sumDigit() {
+//     let num = Number(await input.question("enter number:"))
+//     let summ = 0
+//     while(num >0){
+//    digit = num%10
+//    summ += digit
+//    num = Math.floor(num/10)
+
+//     }
+//     console.log(summ)
+//     input.close()
+// }
+// sumDigit()
+
+
 
 
