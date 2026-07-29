@@ -71,11 +71,11 @@
 12
 
 
-// let arr = ["A","B","C"];
+// `let arr = ["A","B","C"];
 
 // let x = arr.slice(1);
 
 // arr.splice(0,1);
 
 // console.log(x);
-// console.log(arr);
+// console.log(arr);`
