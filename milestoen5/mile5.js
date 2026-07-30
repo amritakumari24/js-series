@@ -277,14 +277,14 @@
 // console.log(arr1);
 
 // console.log(arr2);
-const person = {
+// const person = {
 
-name:"Rahul",
+// name:"Rahul",
 
-age:20
+// age:20
 
-};
+// };
 
-const {age} = person;
+// const {age} = person;
 
-console.log(age);
+// console.log(age);
