@@ -243,3 +243,48 @@
 
 // console.log(value ?? 100);
 // let value = 0;
+// console.log(false && "Hello");
+
+// console.log(true && "Hello");
+
+// console.log("" || "Guest");
+
+// console.log("Rahul" || "Guest");
+// let a = 10;
+
+// function test() {
+
+//     console.log(a);
+
+//     let a = 20;
+
+// }
+
+// test();
+// const arr1 = [1,2];
+
+// const arr2 = arr1;
+
+// arr2.push(3);
+
+// console.log(arr1);
+// const arr1 = [1,2];
+
+// const arr2 = [...arr1];
+
+// arr2.push(3);
+
+// console.log(arr1);
+
+// console.log(arr2);
+const person = {
+
+name:"Rahul",
+
+age:20
+
+};
+
+const {age} = person;
+
+console.log(age);
