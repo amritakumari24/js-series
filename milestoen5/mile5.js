@@ -288,3 +288,64 @@
 // const {age} = person;
 
 // console.log(age);
+
+// const readline = require('readline');
+// const input = readline.createInterface({
+//     input: stdin,
+//     output: stdout
+// })
+
+// async function jgewg(){
+
+
+
+//     input.close()
+// }
+
+// const user = {
+//   name: "Ravi",
+
+//   greet: function () {
+//     console.log(this.name);
+//   }
+// };
+
+// user.greet(); // Ravi
+// const greet = (name = "Guest") => {
+//   return `Hello, ${name}!`;
+// };
+
+// console.log(greet("Aman"));
+// console.log(greet(null));
+// greet(undefined)
+
+// const colors = [
+// "red", "green", "blue"
+// ]
+
+// const [first, second, third ] = colors
+// console.log(third)
+
+// const obj = {
+//    name: "amrita",
+//    age: 19,
+//    grade: "a" 
+// }
+// const {name, age} = obj
+// console.log(name, age);
+
+
+// const students ={
+//     name:
+//     "amrita",
+//     address:
+//     {
+//         city: "korba",
+//         state:"cg"
+//     }
+    
+// };
+
+// const {address: {city, state}} = students
+// console.log(city, state)
+
