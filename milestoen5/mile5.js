@@ -346,6 +346,7 @@
     
 // };
 
+
 // const {address: {city, state}} = students
 // console.log(city, state)
 
