@@ -179,43 +179,54 @@
 
 
 
-let ecxpenses = [];
-function addExpense(name, amount, category ){
-    let expense = {
-        name: name,
-        amount: amount,
-        category: category
+// let ecxpenses = [];
+// function addExpense(name, amount, category ){
+//     let expense = {
+//         name: name,
+//         amount: amount,
+//         category: category
+//     }
+//     expenses.push(expense)
+//     console.log("Expense Added:", expense)
+// }
+
+// function getTotalExpense(){
+//     let total = 0;
+//     for(let expense of expenses){
+//         total += expense.amount
+//     }
+//     console.log("total EXpense:", total)
+// }
+
+// function getCategoryWIseExpense(){
+//     let categoryExpense ={}
+//     for (let expense of expenses){
+//         if (categoryExpense[expense.category]){
+//             categoryExpense[expense.category] += expense.amount;
+//         }else{
+//             categoryExpense[expense.category] = expense.amount;
+//         }
+//     }
+
+//     console.log("category wise expense:")
+//     console.log(categoryExpense);
+// }
+
+// addExpense("burger", 200, "food");
+// addExpense("bus ticket", 100, "travel");
+// addExpense("movie", 300, 'entertainment')
+// addExpense("pizza", 400, "food")
+
+// getTotalExpense();
+// getCategoryWIseExpense()
+
+
+function gcd(a,b){
+    while(b!=0){
+        let temp =b 
+        b= a%b;
+        a = temp
     }
-    expenses.push(expense)
-    console.log("Expense Added:", expense)
+    return a;
 }
-
-function getTotalExpense(){
-    let total = 0;
-    for(let expense of expenses){
-        total += expense.amount
-    }
-    console.log("total EXpense:", total)
-}
-
-function getCategoryWIseExpense(){
-    let categoryExpense ={}
-    for (let expense of expenses){
-        if (categoryExpense[expense.category]){
-            categoryExpense[expense.category] += expense.amount;
-        }else{
-            categoryExpense[expense.category] = expense.amount;
-        }
-    }
-
-    console.log("category wise expense:")
-    console.log(categoryExpense);
-}
-
-addExpense("burger", 200, "food");
-addExpense("bus ticket", 100, "travel");
-addExpense("movie", 300, 'entertainment')
-addExpense("pizza", 400, "food")
-
-getTotalExpense();
-getCategoryWIseExpense()
+console.log(gcd(4,8))
