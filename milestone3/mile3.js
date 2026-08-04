@@ -232,14 +232,14 @@
 // console.log(gcd(4,8))
 
 
-function gcd (a,b){
-    while(b){
-        [a,b] = [b,a%b]
-    }
-    return a 
-}
-function lcm(a,b){
-    return a*b/gcd(a,b)
-}
+// function gcd (a,b){
+//     while(b){
+//         [a,b] = [b,a%b]
+//     }
+//     return a 
+// }
+// function lcm(a,b){
+//     return a*b/gcd(a,b)
+// }
 
-console.log(lcm(12,18))
+// console.log(lcm(12,18))
