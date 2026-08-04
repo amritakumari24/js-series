@@ -221,12 +221,25 @@
 // getCategoryWIseExpense()
 
 
-function gcd(a,b){
-    while(b!=0){
-        let temp =b 
-        b= a%b;
-        a = temp
+// function gcd(a,b){
+//     while(b!=0){
+//         let temp =b 
+//         b= a%b;
+//         a = temp
+//     }
+//     return a;
+// }
+// console.log(gcd(4,8))
+
+
+function gcd (a,b){
+    while(b){
+        [a,b] = [b,a%b]
     }
-    return a;
+    return a 
 }
-console.log(gcd(4,8))
+function lcm(a,b){
+    return a*b/gcd(a,b)
+}
+
+console.log(lcm(12,18))
