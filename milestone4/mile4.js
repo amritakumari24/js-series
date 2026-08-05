@@ -71,6 +71,7 @@
 12
 
 
+const { stdin } = require('process')
 // `let arr = ["A","B","C"];
 
 // let x = arr.slice(1);
@@ -141,3 +142,132 @@
 // let avg = total/student.marks.length;
 
 // console.log(`Name of student ${student.name}, average ${avg}`)
+
+
+// const prompt = require("prompt-sync")();
+
+// let name = prompt("Enter your name: ");
+// console.log(name);
+
+
+// const readline = require("readline/promises");
+
+// const input = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// });
+
+// async function calculatorEngine() {
+//   let equation = await input.question("Enter equation: ");
+
+//   let result = eval(equation);
+
+//   console.log("Result:", result);
+
+//   input.close();
+// }
+
+// calculatorEngine();
+
+
+// const readline = require("readline/promises");
+
+// const input = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// });
+
+// async function wordAnalyzer(){
+//     const str = await input.question("enter str: ")
+//     let vowelCount = 0
+//     let consotantCount = 0
+//     for(let ch of str ){
+//         if("aeiou".includes(ch)){
+//             vowelCount++
+//         }else if ("bcdfghjklmnpqrstvwxyz".includes(ch)){
+//     consotantCount++
+//         }
+//     }
+//     console.log(`NUmber of vowels ${vowelCount}`)
+//    let words = str.split(" ");
+//    console.log(`Count of words ${words.length}`)
+//    console.log(`Count of characters ${str.trim().length}`)
+//    console.log(`Count of consonants ${consotantCount}`)
+
+//     input.close()
+// }
+// wordAnalyzer();
+
+
+//expense tracker 
+
+// const readline = require("readline/promises");
+
+// const input = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// });
+
+// let expenses = [];
+
+// async function expenseTracker() {
+//   let name = await input.question("Enter expense name: ");
+//   let amount = Number(await input.question("Enter amount: "));
+//   let category = await input.question("Enter category: ");
+
+//   let expense = {
+//     name,
+//     amount,
+//     category
+//   };
+
+//   expenses.push(expense);
+
+//   let total = 0;
+
+//   for (let i = 0; i < expenses.length; i++) {
+//     total += expenses[i].amount;
+//   }
+//   let categoryWiseExpense = {}
+// for(let i=0; i< expenses.length; i++){
+//     let category = expenses[i].category;
+//     if (categoryWiseExpense[category]){
+//         categoryWiseExpense[category] += expenses[i].amount
+//     }else{
+//         categoryWiseExpense[category] = expenses[i].amount
+//     }
+// }
+
+
+//   console.log("Expenses:", expenses);
+//   console.log(`Total amount of expenses: ${total}`);
+//   console.log("Category Wise Expense:", categoryWiseExpense);
+
+//   input.close();
+// }
+
+// expenseTracker();
+
+
+const readline = require("readline/promises");
+
+const input = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+async function guessNumber(){
+    
+    const acutalNumber = Math.floor(Math.random()*10 )+1;
+    let number = 0;
+    while(number !== acutalNumber){
+        const number = Number(await input.question("guess the number: "))
+        if (number=== acutalNumber){
+        console.log("Congratulations ! you guessed right")}else{
+ console.log("try again")
+        }
+    }
+   
+    input.close()
+}
+guessNumber()
