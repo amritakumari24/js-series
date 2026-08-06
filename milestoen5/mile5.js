@@ -438,17 +438,17 @@
 // let {age}= student
 // console.log(age)
 
-let num1 = 20;
-let num2 = 5;
+// let num1 = 20;
+// let num2 = 5;
 
-let operation = "add"
+// let operation = "add"
 
-switch (operation){
-    case "add":
-    console.log(`addition ${num1+num2}`)
-    break;
-    case "sub":
-    console.log(num2-num1)  
-    break 
-      
-}   
+// switch (operation){
+//     case "add":
+//     console.log(`addition ${num1+num2}`)
+//     break;
+//     case "sub":
+//     console.log(num2-num1)  
+//     break 
+
+// }   
