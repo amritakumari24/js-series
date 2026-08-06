@@ -350,3 +350,27 @@
 // const {address: {city, state}} = students
 // console.log(city, state)
 
+
+
+// const fruits = ["apple", "mango"];
+// const vegetables = ["Carrot", "potato"];
+// const comnined = [...fruits, ...vegetables]
+// console.log(comnined)
+
+//clone OBjects 
+
+// const originalUser = {
+// name: "amrita",
+// age: 19
+// }
+
+// const cloneUser = {
+//    state: "cg",
+//    dist: "korba",
+//    ...originalUser
+
+// }
+// console.log(originalUser)
+
+// // 
+// console.log(null===undefined)
