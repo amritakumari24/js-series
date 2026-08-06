@@ -374,3 +374,81 @@
 
 // // 
 // console.log(null===undefined)
+// console.log(typeof []);
+// console.log([] == false);
+
+// var a = 10;
+
+// function test(){
+//    console.log(a);
+//    var a = 20;
+// }
+
+// test();
+
+// const user={
+// name:"Raj"
+// }
+
+// delete user.name
+
+
+
+
+// let a=10;
+
+// function x(){
+// console.log(a);
+// }
+
+// x();
+
+// function test(){
+
+// console.log(a);
+
+// var a=5;
+
+// }
+
+// test();
+// let arr=[1,2,3];
+
+// arr.push(4);
+
+// console.log(arr.length);
+
+// const obj={
+// name:"John"
+// }
+
+// obj.name="Mike"
+
+// console.log(obj)
+// let arr=[1,2];
+
+// arr=[3,4];
+// console.log(arr)
+
+// const student={
+// name:"John",
+// age:22
+// }
+
+// let {age}= student
+// console.log(age)
+
+let num1 = 20;
+let num2 = 5;
+
+let operation = "add"
+
+switch (operation){
+    case "add":
+    console.log(`addition ${num1+num2}`)
+    break;
+    case "sub":
+    console.log(num2-num1)  
+    break 
+      
+}   
