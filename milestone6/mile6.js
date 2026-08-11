@@ -2,6 +2,7 @@ const count = document.getElementById("count");
 const increase = document.getElementById("increament");
 const decrease = document.getElementById("decreament");
 const themeBtn = document.getElementById("themeBtn");
+const clock = document.getElementById("clock");
 
 
 let value = 0;
@@ -32,3 +33,20 @@ themeBtn.addEventListener("click", function(){
          document.body.style.color = "black";
     }
 })
+
+// function showTime() {
+//     const now = new Date();
+
+//     clock.textContent = now.toLocaleTimeString();
+// }
+
+// showTime();
+
+// setInterval(showTime, 1000);
+
+function showTime(){
+    const now = new Date();
+    clock.textContent = now.toLocaleTimeString();
+}
+showTime();
+setInterval(showTime, 1000);
