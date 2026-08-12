@@ -3,7 +3,8 @@ const increase = document.getElementById("increament");
 const decrease = document.getElementById("decreament");
 const themeBtn = document.getElementById("themeBtn");
 const clock = document.getElementById("clock");
-
+const  password = document.getElementById("password");
+const toggle = document.getElementById("toggle");
 
 let value = 0;
 
@@ -34,15 +35,6 @@ themeBtn.addEventListener("click", function(){
     }
 })
 
-// function showTime() {
-//     const now = new Date();
-
-//     clock.textContent = now.toLocaleTimeString();
-// }
-
-// showTime();
-
-// setInterval(showTime, 1000);
 
 function showTime(){
     const now = new Date();
@@ -50,3 +42,14 @@ function showTime(){
 }
 showTime();
 setInterval(showTime, 1000);
+
+
+toggle.addEventListener("click", function(){
+    if (password.type === "password"){
+        password.type = "text"
+        toggle.innerText = "Hide"
+    }else{
+        password.type = "password";
+        toggle.innerText = "Show";
+    }
+})
