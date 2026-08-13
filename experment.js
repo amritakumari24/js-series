@@ -40,3 +40,49 @@
 // console.log(students)
 
 //holiday 
+
+
+
+// const students = {
+//   s1: {
+//     name: "Aman",
+//     age: 21,
+//     marks: { math: 85, js: 92, python: 78 }
+//   },
+//   s2: {
+//     name: "Riya",
+//     age: 22,
+//     marks: { math: 95, js: 88, python: 91 }
+//   },
+//   s3: {
+//     name: "Karan",
+//     age: 20,
+//     marks: { math: 72, js: 96, python: 85 }
+//   }
+// };
+
+// // const {s1, s2, s3} = students;
+// // console.log(students)
+// // let total = 0
+// // for(let i =0; i<students.length; i++){
+    
+// //     for (let j=i; j<marks.length; j++){
+// //         total += students.marks[j]
+// //     }
+// // }
+// console.log(students.s1.marks.math +students.s1.marks.python+ students.s1.marks.js)
+// let total = students.find.aggregate([
+// //     $sum:{
+// //         s1: "$marks"
+// //     }
+// // ])4
+
+
+// let total = students.aggregate([
+//     {
+//         $group: {
+//             _id: null,
+//             s1: { $sum: "$marks" }
+//         }
+//     }
+// ])
