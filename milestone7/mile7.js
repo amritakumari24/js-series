@@ -25,3 +25,7 @@ changee.addEventListener("change", (e)=>{
 })
 
 
+// two ways to add events 
+// 1. addeventlistner 
+// 2. onclick 
+//prefer addevent ;istner 
