@@ -29,3 +29,6 @@ changee.addEventListener("change", (e)=>{
 // 1. addeventlistner 
 // 2. onclick 
 //prefer addevent ;istner 
+
+//sunday 
+//gk 
