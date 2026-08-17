@@ -1,3 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Live Character</h1>
+
+<input type="text" id="livechar">
+
+<p id="charshow">loading...</p>
+
+<script>
+const charshow = document.getElementById("charshow");
+const livechar = document.getElementById("livechar");
+
+livechar.addEventListener("input", (e) => {
+    charshow.textContent = e.target.value.length;
+});
+</script>
+</body>
+</html>
+
 <!-- <!DOCTYPE html>
 <html>
 <head>

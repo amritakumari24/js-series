@@ -3,6 +3,10 @@ const nhipta = document.getElementById("nhipta")
 const out = document.getElementById("out");
 const inputt = document.getElementById("inputt")
 const changee = document.getElementById("changee")
+const buttons = document.querySelectorAll(".btn");
+const charshow = document.getElementById("charshow");
+const livechar = document.getElementById("livechar");
+
 
 text.addEventListener("dblclick", ()=>{
     text.textContent = "editing...."
@@ -32,3 +36,21 @@ changee.addEventListener("change", (e)=>{
 
 //sunday 
 //gk 
+
+
+
+
+// classList
+
+
+
+// buttons.forEach((button) => {
+//     button.addEventListener("click", (event) => {
+//         console.log(event.target.textContent);
+//     });
+// });
+
+
+charlive.addEventListener("input", (e)=>{
+    charshow.textContent = e.target.value
+})
