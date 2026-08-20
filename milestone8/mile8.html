@@ -6,11 +6,42 @@
     <title>Document</title>
 </head>
 <body>
-    grficu4 
+    <!-- grficu4  -->
+
+    <h1>Dynamic List Builder</h1>
+    <input type="text" id="listbuilder">
+    <button id="add">Add</button>
+    <ul id="list"></ul>
 <script>
-   const p =  document.createElement("p")
-    p.textContent = "hello dom"
-    document.body.append(p);
+//    const p =  document.createElement("p")
+//     p.textContent = "hello dom"
+//     document.body.append(p);
+
+const listbuilder = document.getElementById("listbuilder");
+const add = document.getElementById("add")
+const list = document.getElementById("list")
+
+
+
+add.addEventListener("click", (e)=>{
+  let text = listbuilder.value;
+  if (text == "") return 
+  const li = document.createElement('li');
+  const del = document.createElement('button');
+  del.innerText = "delete"
+  li.textContent = text;
+
+    del.addEventListener("click", ()=>{
+    li.remove()
+    
+})
+
+  list.append(li)
+  li.append(del)
+
+   
+})
+
 </script>
     
     
