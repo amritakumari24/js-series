@@ -7,39 +7,103 @@
 </head>
 <body>
     <!-- grficu4  -->
-
+<!-- 
     <h1>Dynamic List Builder</h1>
     <input type="text" id="listbuilder">
     <button id="add">Add</button>
-    <ul id="list"></ul>
+    <ul id="list"></ul> -->
+
+<h1>Note App</h1>
+
+
+<input id="title" placeholder="write ypur title here...">
+<textarea id="text" placeholder="write your note here..."></textarea>
+<button id="AddBtn">add note</button>
+<div id="show"></div>
+
 <script>
 //    const p =  document.createElement("p")
 //     p.textContent = "hello dom"
 //     document.body.append(p);
 
-const listbuilder = document.getElementById("listbuilder");
-const add = document.getElementById("add")
-const list = document.getElementById("list")
+// const listbuilder = document.getElementById("listbuilder");
+// const add = document.getElementById("add")
+// const list = document.getElementById("list")
 
 
 
-add.addEventListener("click", (e)=>{
-  let text = listbuilder.value;
-  if (text == "") return 
-  const li = document.createElement('li');
-  const del = document.createElement('button');
-  del.innerText = "delete"
-  li.textContent = text;
+// // add.addEventListener("click", (e)=>{
+// //   let text = listbuilder.value;
+// //   if (text == "") return 
+// //   const li = document.createElement('li');
+// //   const del = document.createElement('button');
+// //   del.innerText = "delete"
+// //   li.textContent = text;
 
-    del.addEventListener("click", ()=>{
-    li.remove()
+// //     del.addEventListener("click", ()=>{
+// //     li.remove()
     
-})
+// // })
 
-  list.append(li)
-  li.append(del)
+// //   list.append(li)
+// //   li.append(del)
 
    
+// // })
+
+// add.addEventListener("click", ()=>{
+//     const text = listbuilder.value;
+//     if (text == "") return 
+//     const li = document.createElement('li');
+//     li.textContent = text;
+//     list.append(li)
+//     const del = document.createElement("button");
+//     del.textContent = "delete";
+   
+//     li.append(del)
+
+// })
+
+// list.addEventListener("click", (e)=>{
+//     if(e.target.tagName === "BUTTON"){
+//         e.target.parentElement.remove()
+//     }
+// })
+
+
+
+const title = document.getElementById('title');
+const text = document.getElementById("text");
+const addBtn = document.getElementById("AddBtn");
+const show = document.getElementById("show")
+
+addBtn.addEventListener("click", function(){
+
+
+const note = document.createElement("div");
+const noteTitle = document.createElement("h3");
+const noteText = document.createElement("p");
+const deleteBtn = document.createElement('button');
+
+noteTitle.textContent = title.value;
+noteText.textContent = text.value;
+deleteBtn.textContent = "delete";
+
+
+note.append(noteTitle);
+note.append(noteText);
+note.append(deleteBtn);
+
+
+show.append(note);
+
+deleteBtn.addEventListener("click", function(){
+    note.remove();
+
+});
+
+title.value = "";
+text.value = "";
 })
 
 </script>
