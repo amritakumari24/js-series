@@ -96,10 +96,14 @@ note.append(deleteBtn);
 
 
 show.append(note);
+localStorage.setItem("title", title.value);
+localStorage.setItem("text", text.value);
+
 
 deleteBtn.addEventListener("click", function(){
     note.remove();
-
+localStorage.removeItem("title");
+localStorage.removeItem("text");
 });
 
 title.value = "";
