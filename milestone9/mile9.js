@@ -10,3 +10,9 @@
 // dom api  [mutation Observer]
 // setTimeout() [timer]
 
+ // difference between not defined and undefined
+ var a;
+ console.log(a); // undefined
+ console.log(b); // ReferenceError: b is not defined7
+
+ a = undefined; // bad practice to assign undefined to a variable
