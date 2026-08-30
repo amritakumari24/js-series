@@ -125,16 +125,57 @@
 
 // console.log(calculate(2, 3, add) * calculate(2, 3, multiply));
 
-function process(num, fn) {
-    return fn(num);
+// function process(num, fn) {
+//     return fn(num);
+// }
+
+// function double(x) {
+//     return x * 2;
+// }
+
+// function addTen(x) {
+//     return x + 10;
+// }
+
+// console.log(process(process(5, double), addTen))
+
+
+
+
+
+
+//(closures in loop + setTimeOut)
+
+
+// solution without let (using IIFE (immedietly invoked function expression)) 
+// function x(){
+//     for(var i=1; i<=5; i++){
+//         function close(i){
+//         setTimeout(function(){
+//             console.log(i)
+//         }, i*1000)
+//     }
+// close(i);
+// } 
+// }
+// x();
+
+
+
+//var + closure + IIFE + setTimeout + event loop
+
+for (var i = 0; i < 3; i++) {
+  setTimeout(() => {
+    console.log("A", i);
+  }, 0);
+
+  (() => {
+    const x = i;
+    setTimeout(() => {
+      console.log("B", x);
+    }, 0);
+  })();
 }
 
-function double(x) {
-    return x * 2;
-}
 
-function addTen(x) {
-    return x + 10;
-}
 
-console.log(process(process(5, double), addTen))
