@@ -164,18 +164,35 @@
 
 //var + closure + IIFE + setTimeout + event loop
 
-for (var i = 0; i < 3; i++) {
-  setTimeout(() => {
-    console.log("A", i);
-  }, 0);
+// for (var i = 0; i < 3; i++) {
+//   setTimeout(() => {
+//     console.log("A", i);
+//   }, 0);
 
-  (() => {
-    const x = i;
-    setTimeout(() => {
-      console.log("B", x);
-    }, 0);
-  })();
-}
+//   (() => {
+//     const x = i;
+//     setTimeout(() => {
+//       console.log("B", x);
+//     }, 0);
+//   })();
+// }
 
 
+
+
+//objets in js 
+
+// const user = {
+//     name: "Rahul",
+//     age: 25,
+//     city: "Delhi"
+// };
+
+// for ( let key in user){
+//   console.log(Object.values(user)[1])
+// }
+
+// for(let key in user){
+  
+// }
 
