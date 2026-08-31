@@ -196,3 +196,31 @@
   
 // }
 
+// //dom 
+
+
+// event.target → the element that was actually clicked.
+// event.currentTarget → the element whose event handler is currently running.
+
+
+
+// What does normalize() do?
+
+// It cleans up a DOM node by:
+
+// Merging adjacent text nodes into a single text node.
+// Removing empty text nodes.
+
+
+// Before normalize():
+
+// div
+//  ├── Text: "Hello "
+//  └── Text: "World"
+
+// After normalize():
+
+// div
+//  └── Text: "Hello World"
+
+
