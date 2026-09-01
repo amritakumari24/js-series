@@ -29,8 +29,24 @@
 // console.log(minn)
 
 // Q5. Count the number of elements
-const arr = [10, 20, 30, 40, 50];
-const count = arr.reduce((c, i )=>{
-    return  c+1
-},0)
-console.log(count)
+// const arr = [10, 20, 30, 40, 50];
+// const count = arr.reduce((c, i )=>{
+//     return  c+1
+// },0)
+// console.log(count)
+
+// const prices = [100, 250, 50, 300];
+// const a = prices.reduce((acc, curr)=>{
+//     return acc+curr
+// }, 0)
+// console.log(a)
+
+
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// // Expected: 4
+
+// const a = arr.reduce((c,i)=>{
+//     return i%2==0? c+1:c
+// }, 0)
+// console.log(a)
