@@ -50,3 +50,42 @@
 //     return i%2==0? c+1:c
 // }, 0)
 // console.log(a)
+
+
+
+// milestone10 topics 
+
+
+// Closures
+// this keyword
+// call(), apply(), bind()
+// Pass by Value vs Pass by Reference
+// Shallow Copy vs Deep Copy
+// Regular Expressions Basics
+
+
+// function counter (){
+//     let count = 0;
+//     return function (){
+//         count ++
+//         console.log(count)
+//     };
+// }
+// const increament = counter()
+// increament()
+// increament()
+// increament()
+
+
+
+// function add(a, b) {
+//     console.log(a + b);
+// }
+
+// add.call(40, 10, 20, 40);
+// 
+
+
+// pattern = /hello amrita/
+// console.log(pattern.test("hello amrita fine"))
+
