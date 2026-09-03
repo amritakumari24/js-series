@@ -86,3 +86,10 @@
 //         }
 //     }
 // ])
+
+
+// let arr = [1,2,3,4]
+// const a = arr.reduce((c, i)=>{
+//     return  i%2==0? c+=i : c
+// }, 0)
+// console.log(a)
