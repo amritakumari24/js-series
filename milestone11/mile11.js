@@ -202,3 +202,29 @@
 // user.age = 30;
 
 // console.log(user.age);
+
+
+// Agar teeno operations independent hain, toh sequentially wait karna unnecessary ho sakta hai.
+
+// const [user, orders, products] = await Promise.all([
+//   getUser(),
+//   getOrders(),
+//   getProducts()
+// ]);
+
+// Yahan // Promise.all() //useful hai.
+
+// try
+// catch 
+// throw
+// finally 
+
+
+// const id = Symbol("id");
+// const user = {
+//     name :" amrita",
+//     [id]: 100
+// };
+
+
+// SYmbol is used to create unique property keys in janavascript and avoid naming conflicts 
