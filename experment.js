@@ -93,3 +93,71 @@
 //     return  i%2==0? c+=i : c
 // }, 0)
 // console.log(a)
+
+
+
+
+const student = {
+  name: "Ashwini",
+  age: 19,
+  address: {
+    city: "Delhi",
+    state: "Delhi",
+    pincode: 110001
+  },
+  skills: {
+    frontend: ["HTML", "CSS", "JavaScript", "React"],
+    backend: ["Node.js", "Express", "MongoDB"]
+  },
+  marks: {
+    javascript: 85,
+    react: 90,
+    node: 78,
+    mongodb: 88
+  }
+}
+// }; 
+// Print the student's city.
+// Print the student's state.
+// Print the second frontend skill.
+// Print the last backend skill.
+// Print the student's React marks.
+// Find the total marks.
+// Find the average marks.
+// Find the highest-scoring subject.
+// Add a new skill "TypeScript" to the frontend skills.
+// Add a new subject "DSA" with marks 92.
+
+console.log(student.address.city)
+console.log(student.address.state)
+console.log(student.skills.frontend[1])
+console.log(student.skills.backend[student.skills.backend.length-1])
+console.log(student.marks.react)
+let total = 0
+for (let i in student.marks){
+    total += student.marks[i] 
+}
+console.log("total marks:",total)
+
+
+let avg = total/Object.keys(student.marks).length-1
+console.log(`avg: ${avg}`)
+
+maxx = -Infinity
+maxx_key = null
+for(let [key,value] of Object.entries(student.marks)){
+    if(value > maxx){
+        maxx = value
+        maxx_key = key
+    }
+}
+console.log(maxx_key)
+
+
+student.skills.frontend.push("Typescript")
+console.log(student.skills.frontend)
+
+     
+student.marks = {...student.marks,
+    DSA: 92}
+console.log(student.marks)

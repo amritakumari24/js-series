@@ -24,3 +24,4 @@ printfullName.apply(name2, ["korba", "cg" ])
 let printMyName  = printfullName.bind(name2, "heloo" , "bye")
 console.log(printMyName)
 printMyName()
+
