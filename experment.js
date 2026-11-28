@@ -190,14 +190,51 @@ const student = {
 
 
 //closures 
-function outer(){
-  let count = 0;
-  function inner(){
-    count ++ 
-    console.log(count)
-  }
-  return inner
-}
-const counter = outer()
-counter();
-counter();
+// function outer(){
+//   let count = 0;
+//   function inner(){
+//     count ++ 
+//     console.log(count)
+//   }
+//   return inner
+// }
+// const counter = outer()
+// counter();
+// counter();
+// function outer(){
+//   var count = 0;
+//   function inner(){
+//     count ++ 
+//     console.log(count)
+//   }
+//   return inner
+// }
+
+// const counter = outer()
+// counter();
+// counter();
+// counter();
+
+
+
+
+//currying 
+// function add (a){
+//   return function(b){
+//     return function(c){
+//       return a+b +c;
+//     }
+//   }
+// }
+
+// console.log(add(2)(3)(1));
+
+
+// without currying 
+
+// function add (a,b,c){
+//   return a+b+c
+
+// }
+
+// console.log(add(1,2,3))
